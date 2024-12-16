@@ -4,38 +4,34 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.widget.Toast;
+import android.widget.Button;
 
-import com.teguh.sqlite_f55123046.databinding.ActivityMainBinding;
 import com.teguh.sqlite_f55123046.utils.DatabaseHelper;
 
 public class MainActivity extends AppCompatActivity {
 
-    private ActivityMainBinding binding;
+    private Button btnLogin, btnRegister;
     private DatabaseHelper databaseHelper;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding = ActivityMainBinding.inflate(getLayoutInflater());
-        setContentView(binding.getRoot());
+        setContentView(R.layout.activity_main);
 
+        // Initialize DatabaseHelper
         databaseHelper = new DatabaseHelper(this);
-        binding.btnLogin.setOnClickListener(view -> {
-            String username = binding.edtUsername.getText().toString().trim();
-            String password = binding.edtPassword.getText().toString().trim();
-            boolean res = databaseHelper.checkUser(username, password);
 
-            if (res) {
-                Toast.makeText(MainActivity.this, "Succesfully Logged In", Toast.LENGTH_SHORT).show();
-                Intent contentIntent = new Intent(MainActivity.this, ContentActivity.class);
-                startActivity(contentIntent);
-            } else {
-                Toast.makeText(MainActivity.this,"Username atau Password Anda Salah", Toast.LENGTH_SHORT).show();
-            }
+        // Bind UI components
+        btnLogin = findViewById(R.id.btn_1);
+        btnRegister = findViewById(R.id.btn_2);
+
+        // Set up button listeners
+        btnLogin.setOnClickListener(view -> {
+            Intent loginIntent = new Intent(MainActivity.this, LoginActivity.class);
+            startActivity(loginIntent);
         });
 
-        binding.btnRegister.setOnClickListener(view -> {
+        btnRegister.setOnClickListener(view -> {
             Intent registerIntent = new Intent(MainActivity.this, RegisterActivity.class);
             startActivity(registerIntent);
         });
