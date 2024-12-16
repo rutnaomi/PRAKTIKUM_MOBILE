@@ -1,0 +1,6 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true" android:color="#000000" /> <!-- Warna saat ditekan -->
+    <item android:state_focused="true" android:color="#F80404" /> <!-- Warna saat di-hover -->
+    <item android:state_checked="true" android:color="#Ffb000" /> <!-- Warna saat dipilih -->
+    <item android:color="#FFFFFF" /> <!-- Warna default -->
+</selector>
