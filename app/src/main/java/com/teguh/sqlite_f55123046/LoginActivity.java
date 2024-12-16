@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Toast;
+import android.view.View;
 
 import com.teguh.sqlite_f55123046.databinding.ActivityLoginBinding;
 import com.teguh.sqlite_f55123046.utils.DatabaseHelper;
@@ -41,6 +42,18 @@ public class LoginActivity extends AppCompatActivity {
         // Register Button
         binding.RBtn1.setOnClickListener(view -> {
             Intent registerIntent = new Intent(LoginActivity.this, ContentActivity.class);
+            startActivity(registerIntent);
+        });
+
+        // Handle ImageView click
+        binding.LBack.setOnClickListener(view -> {
+            Intent mainIntent = new Intent(LoginActivity.this, MainActivity.class);
+            startActivity(mainIntent);
+        });
+
+        // Handle TextView click for Registration
+        binding.LRegister.setOnClickListener(view -> {
+            Intent registerIntent = new Intent(LoginActivity.this, RegisterActivity.class);
             startActivity(registerIntent);
         });
     }

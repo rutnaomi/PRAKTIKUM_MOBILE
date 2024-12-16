@@ -51,5 +51,15 @@ public class RegisterActivity extends AppCompatActivity {
                 Toast.makeText(RegisterActivity.this, "Registration failed", Toast.LENGTH_SHORT).show();
             }
         });
+
+        binding.RBack.setOnClickListener(view -> {
+            Intent mainIntent = new Intent(RegisterActivity.this, MainActivity.class);
+            startActivity(mainIntent);
+        });
+
+        binding.RLogin.setOnClickListener(view -> {
+            Intent registerIntent = new Intent(RegisterActivity.this, LoginActivity.class);
+            startActivity(registerIntent);
+        });
     }
 }

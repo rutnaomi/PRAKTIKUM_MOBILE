@@ -21,7 +21,8 @@
         android:layout_height="wrap_content"
         android:src="@drawable/ic_back"
         android:layout_marginLeft="18dp"
-        android:layout_marginTop="25dp"/>
+        android:layout_marginTop="25dp"
+        android:id="@+id/R_back"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -119,7 +120,8 @@
             android:layout_height="wrap_content"
             android:text=" Login"
             android:textSize="12sp"
-            android:textColor="@color/primaryColor"/>
+            android:textColor="@color/primaryColor"
+            android:id="@+id/R_login"/>
 
     </LinearLayout>
 
