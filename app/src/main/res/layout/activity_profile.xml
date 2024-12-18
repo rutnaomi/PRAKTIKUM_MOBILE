@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F5F5">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@drawable/bg_view2"
+        android:id="@+id/bg_view2"/>
+
+
+    <ImageView
+        android:id="@+id/settings_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_back2"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="25dp"
+        android:contentDescription="Back Button" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="Setting"
+        android:textStyle="bold"
+        android:textSize="24dp"
+        android:textColor="@color/white"/>
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/profil"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="110dp"/>
+
+    <!-- Full Name -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/kolom_nama"
+        android:layout_below="@id/bg_view2"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="10dp"
+        android:text="Full Name"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/P_full_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/kolom_nama"
+        android:hint="Nama"
+        android:background="@android:color/transparent"
+        android:focusable="false"
+        android:textColor="#777"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:id="@+id/garis1"
+        android:layout_height="1dp"
+        android:layout_below="@id/P_full_name"
+        android:background="#BDBDBD"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <!-- Email -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/garis1"
+        android:layout_marginTop="10dp"
+        android:id="@+id/email"
+        android:text="E-mail"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:textSize="14sp"
+        android:layout_marginLeft="10dp"/>
+
+    <EditText
+        android:id="@+id/P_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/email"
+        android:layout_marginTop="5dp"
+        android:hint="Email"
+        android:background="@android:color/transparent"
+        android:focusable="false"
+        android:textColor="#777"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_marginLeft="10dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_below="@+id/P_email"
+        android:id="@+id/garis2"
+        android:layout_height="1dp"
+        android:background="#BDBDBD"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <!-- Password -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/garis2"
+        android:layout_marginTop="10dp"
+        android:id="@+id/password"
+        android:text="Password"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:textSize="14sp"
+        android:layout_marginLeft="10dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password"
+        android:id="@+id/kolom_password">
+
+        <EditText
+            android:id="@+id/P_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:inputType="textPassword"
+            android:text="******"
+            android:background="@android:color/transparent"
+            android:textColor="#777"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp"/>
+
+        <ImageView
+            android:id="@+id/P_toggle_password"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_eye"
+            android:layout_marginRight="15dp"/>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/garis3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#BDBDBD"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@+id/kolom_password"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <!-- Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/garis3"
+        android:orientation="horizontal"
+        android:gravity="end">
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:textColor="#FFF"
+            android:layout_marginEnd="30dp"
+            android:backgroundTint="#777"
+            android:layout_marginTop="50dp"/>
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="70dp"
+            android:layout_marginTop="50dp"
+            android:text="Save"
+            android:textColor="#FFF"
+            android:backgroundTint="#3F51B5" />
+    </LinearLayout>
+
+</RelativeLayout>
