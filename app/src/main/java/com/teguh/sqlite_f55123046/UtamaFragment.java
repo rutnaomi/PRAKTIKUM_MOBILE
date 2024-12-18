@@ -3,6 +3,8 @@ package com.teguh.sqlite_f55123046;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -23,6 +25,7 @@ public class UtamaFragment extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+    private FragmentManager HomeFragment;
 
     public UtamaFragment() {
         // Required empty public constructor

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn = "navigation_view">
+
+    <group
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_utama"
+            android:icon="@drawable/ic_berita"
+            android:title="Berita Utama"/>
+
+        <item
+            android:id="@+id/nav_olahraga"
+            android:icon="@drawable/ic_olahraga"
+            android:title="Olahraga"/>
+
+        <item
+            android:id="@+id/nav_politik"
+            android:icon="@drawable/ic_politik"
+            android:title="Politik"/>
+
+        <item
+            android:id="@+id/nav_kesehatan"
+            android:icon="@drawable/ic_kesehatan"
+            android:title="Kesehatan"/>
+
+        <item
+            android:id="@+id/nav_teknologi"
+            android:icon="@drawable/ic_teknologi"
+            android:title="Teknologi"/>
+
+        <item
+            android:id="@+id/nav_bisnis"
+            android:icon="@drawable/ic_bisnis"
+            android:title="Bisnis"/>
+    </group>
+    <item
+        android:title="">
+
+        <menu>
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_logout"
+                android:title="Logout"/>
+        </menu>
+
+    </item>
+
+</menu>

@@ -4,15 +4,186 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".UtamaFragment">
+    tools:context=".UtamaFragment"
+    android:background="#E4E2E2">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@drawable/bg_view2"
+        android:id="@+id/bg_view2"/>
+
+    <ImageView
         android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:src="@drawable/logo"/>
+
+    <ImageView
+        android:layout_width="370dp"
+        android:layout_height="240dp"
+        android:src="@drawable/beritaagus"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:id="@+id/berita1"/>
+
+    <androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="380dp"
         android:layout_height="wrap_content"
-        android:text="Berita Utama"
-        android:textSize="30sp"
-        android:layout_centerInParent="true"
-        android:textColor="@color/black"/>
+        android:layout_below="@+id/berita1"
+        android:layout_centerHorizontal="true"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="8dp"
+        android:layout_margin="8dp"
+        android:id="@+id/kolom_berita1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp">
+
+            <!-- Subtitle -->
+            <TextView
+                android:id="@+id/textberita1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@id/buku"
+                android:layout_marginStart="12dp"
+                android:text="Seorang pria menamatkan long runsejauh 42 km sambil merokok"
+                android:textStyle="bold"
+                android:textColor="#808080"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textberita1"
+                android:layout_marginTop="10dp"
+                android:text="22:30"
+                android:layout_marginLeft="10dp"
+                android:textColor="#808080"
+                android:textSize="14sp" />
+
+            <!-- Arrow Icon -->
+            <ImageView
+                android:id="@+id/buku"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="buku"
+                android:src="@drawable/ic_book" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/kolom_berita1"
+        android:layout_centerHorizontal="true"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="8dp"
+        android:layout_margin="8dp"
+        android:id="@+id/kolom_berita2">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp">
+
+            <!-- Subtitle -->
+            <TextView
+                android:id="@+id/textberita2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@id/buku2"
+                android:layout_marginStart="12dp"
+                android:text="Kecelakaan  Yang  Disebabkan Oleh  Ibu Ibu Yang Keluar Jalur"
+                android:textStyle="bold"
+                android:textColor="#808080"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textberita2"
+                android:layout_marginTop="10dp"
+                android:text="14:44"
+                android:layout_marginLeft="10dp"
+                android:textColor="#808080"
+                android:textSize="14sp" />
+
+            <!-- Arrow Icon -->
+            <ImageView
+                android:id="@+id/buku2"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="buku"
+                android:src="@drawable/ic_book" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/kolom_berita2"
+        android:layout_centerHorizontal="true"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="8dp"
+        android:layout_margin="8dp"
+        android:id="@+id/kolom_berita3">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp">
+
+            <!-- Subtitle -->
+            <TextView
+                android:id="@+id/textberita3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@id/buku3"
+                android:layout_marginStart="12dp"
+                android:text="Seorang  Anak  Berhasil  Meraih Juara 1 olimpiade Internasional"
+                android:textStyle="bold"
+                android:textColor="#808080"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textberita3"
+                android:layout_marginTop="10dp"
+                android:text="22:30"
+                android:layout_marginLeft="10dp"
+                android:textColor="#808080"
+                android:textSize="14sp" />
+
+            <!-- Arrow Icon -->
+            <ImageView
+                android:id="@+id/buku3"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="buku"
+                android:src="@drawable/ic_book" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
 
 </RelativeLayout>
